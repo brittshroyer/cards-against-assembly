@@ -24,6 +24,3 @@
 #### Week 3
 
 
-### Unit 2 - Node.js / MongoDB / API's
-
-
