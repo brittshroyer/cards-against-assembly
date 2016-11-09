@@ -25,12 +25,12 @@
 ## Curriculum
 
 - [Installfest](https://github.com/GA-WDI/installfest)
-- [Outcomes](https://drive.google.com/drive/u/2/folders/0B6ZCdNRvw5ZKaHUxMzlIMmoxaHc)
+- Outcomes
 - [Calendar](calendar.md)
-  - Unit 1 - HTML, CSS, JavaScript
-  - Unit 2 - Node.js
-  - Unit 3 - Front End Framework, React
-  - Unit 4 - Second Language, Soft Skills, Interview Prep
+  - Unit 1: Front End Development - HTML, CSS, JavaScript
+  - Unit 2: Back End Development - Node.js / MongoDB / API's
+  - Unit 3: Front End Frameworks
+  - Unit 4: Second Language, Soft Skills, Interview Prep
 
 
 ## Tips
