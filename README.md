@@ -10,14 +10,13 @@
 - Slack
   - You have been invited to the following slack teams:
     - [GA Immersive Students](https://ga-students.slack.com) - Every Immersive student ever at any campus
-      - [#wdi-atx-8](https://ga-students.slack.com/messages/wdi-atx-8/)
+      - [#wdi-atx-9](https://ga-students.slack.com/messages/wdi-atx-9/)
       - [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/)
     - [GA ATX Alumni](https://atx-wdi.slack.com) - Austin WDI alumni (You will be invited end of course)
-  - For informal communication that doesn't need to be private, use the #wdi-atx-8 room
+  - For informal communication that doesn't need to be private, use the #wdi-atx-9 room
   - If you need to talk to the instructors privately, use the Slack rooms we're creating for you with each of the instructors in it. Please don't Slack or email the instructors individually as this creates information asymmetry.
 - Important Dates
-  - Thanksgiving Break: Half day 11/23, 11/24, 11/25
-  - Final Presentations + Last Day: 12/9
+  - 
 
 
 ## Curriculum
@@ -28,7 +27,7 @@
   - Unit 1 - HTML, CSS, JavaScript
   - Unit 2 - Node.js
   - Unit 3 - Front End Framework, React
-  - Unit 4 - Ruby, Soft Skills, Interview Prep
+  - Unit 4 - Second Language, Soft Skills, Interview Prep
 
 
 ## Tips
