@@ -5,7 +5,6 @@
 - Complete and present each of WDI's four projects
 - Be absent no more than 3 days over the whole course
 - Be tardy no more than 5 days over the whole course
-- Complete the [Job Seeker Toolkit before Outcomes Bootcamp](#)
 
 > Please reference our [attendance](attendance.md) and [homework](homework-policy.md) policies for more information.
 
