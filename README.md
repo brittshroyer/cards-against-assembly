@@ -16,8 +16,11 @@
   - For informal communication that doesn't need to be private, use the #wdi-atx-9 room
   - If you need to talk to the instructors privately, use the Slack rooms we're creating for you with each of the instructors in it. Please don't Slack or email the instructors individually as this creates information asymmetry.
 - Important Dates
-  - 
-
+  * 11/24 Thanksgiving 
+  * 11/25 Thanksgiving 
+  * 12/26 - 12/30 Christmas 
+  * 1/2 - New Year's
+  * 1/16 - MLK Day
 
 ## Curriculum
 
