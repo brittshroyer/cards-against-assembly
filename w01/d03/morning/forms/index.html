@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fun with Forms</title>
+  </head>
+  <body>
+    <h1><a href="index.html">What do these attributes do?</a></h1>
+    <p>Play with the form, try submitting it, and look at the source code to find out.</p>
+    <p>(The information doesn't actually get submitted anywhere.)</p>
+    <ul>
+      <li>placeholder</li>
+      <li>checked</li>
+      <li>selected</li>
+      <li>for</li>
+      <li>multiple</li>
+      <li>method</li>
+      <li>action</li>
+      <li>name</li>
+    </ul>
+    <form method="get" action="index.html">
+      <fieldset>
+        <label for="first_name">Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First name" />
+        <input type="text" name="last_name" placeholder="Last name" value="MacGillicuddy" />
+      </fieldset>
+      <fieldset>
+        <textarea name="quote" placeholder="Favorite joke"></textarea>
+      </fieldset>
+      <fieldset>
+        Age:
+        <input type="radio" name="age" id="age_young" value="young" />
+        <label for="age_young">&lt; 21</label>
+        <input type="radio" checked="true" name="age" id="age_old" value="old" />
+        <label for="age_old">&ge; 21</label>
+      </fieldset>
+      <fieldset>
+        Nationality:
+        <select name="nationality">
+          <option value="murican">'murican</option>
+          <option value="unamurican" selected="true">Not 'murican</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        Favorite programming languages:
+        <select name="language" multiple="true">
+          <option value="ruby">Ruby</option>
+          <option value="js">Javascript</option>
+          <option value="html" selected="true">HTML</option>
+          <option value="css">CSS</option>
+          <option value="haskell">Haskell</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        What describes you?
+        <input type="checkbox" id="cool" name="description[]" checked="true" value="is_cool" />
+        <label for="cool">Way cool</label>
+
+        <input type="checkbox" value="heptalingual" />
+        <label>Heptalingual</label>
+
+        <input type="checkbox" name="description[]" value="insalubrious" />
+        <label for="insalubrious">Insalubrious</label>
+      </fieldset>
+      <input type="submit" value="Submit your information" />
+    </form>
+  </body>
+</html>
