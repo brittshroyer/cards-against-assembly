@@ -1,12 +1,12 @@
 # HTML Resume
 
-## The challenge:
+### The challenge:
 
 Take your most recent resume, and re-write it using HTML.
 
 Your HTML should validate using the [W3 Validator](https://validator.w3.org/nu/).
 
-## Restrictions:
+### Restrictions:
 
 You may not use any of the following tags:
 
@@ -52,7 +52,7 @@ https://gist.github.com
 
 You can write the whole thing on the Gist page, or write it in a text editor and copy/paste it into Gist.
 
-**Be sure to click "Create Public Gist".** If you click "Create Private Gist", no-one will be able to see your homework!
+**Be sure to click "Create Public Gist".** If you click "Create Private Gist", no-one will be able to see your work!
 
 To view your HTML as an actual webpage, click the "Raw" button on the Gist, and then add "htmlpreview.github.io/?" to the beginning of that page's URL.
 
