@@ -46,10 +46,6 @@ bgcolor=
 
 -----
 
-# Part 1
-
-## To submit:
-
 Put your HTML into a Gist, for which you will need to be logged in to your Github account:
 
 https://gist.github.com
