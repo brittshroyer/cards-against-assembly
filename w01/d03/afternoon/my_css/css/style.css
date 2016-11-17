@@ -1,0 +1,31 @@
+/* CSS specificity principle
+0. !important declaration
+1. Inline Styles
+2. ID's
+3. Classes
+4. Elements
+*/
+
+#nav-menu ul li {
+  display: inline;
+}
+
+.examplelist li:first-child {
+ /* First List Item*/
+}
+
+.examplelist li:last-child {
+  /* Last List Item*/
+}
+
+form[name*="sign"]{
+ /* A form with a name attribute that contains "sign" */
+}
+
+a:hover {
+  color:red;
+}
+
+a:visited {
+  color: black;
+}
