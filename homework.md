@@ -4,6 +4,7 @@
 
 * [CLI Golf](https://github.com/generalassembly-atx/cli_golf)
 * [Relaxr HTML](https://github.com/generalassembly-atx/relaxr_html)
+* [Relaxr CSS](https://github.com/generalassembly-atx/relaxr_css)
 
 ### Week 2
 
