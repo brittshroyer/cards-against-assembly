@@ -1,0 +1,47 @@
+#box1 {
+  background-color:red;
+}
+#box2 {
+  background-color:salmon;
+}
+#box3 {
+  background-color:orange;
+}
+#box4 {
+  background-color:yellow;
+}
+
+.box {
+  width:100px;
+  height:100px;
+}
+
+@media (min-width:375px){
+  #box1 {
+    background-color:black;
+  }
+  #box2 {
+    background-color:blue;
+  }
+  #box3 {
+    background-color:turquoise;
+  }
+  #box4 {
+    background-color:orange;
+  }
+}
+
+@media (min-width:768px){
+  #box1 {
+    background-color:yellow;
+  }
+  #box2 {
+    background-color:yellow;
+  }
+  #box3 {
+    background-color:blue;
+  }
+  #box4 {
+    background-color:blue;
+  }
+}
