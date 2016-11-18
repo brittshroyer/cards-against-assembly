@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CUSTOM STYLES */
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+h2{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+h3{
+  font-family: 'Roboto Slab', serif;
+  color: #00a84f;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 10px;
+}
+h4{
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+h5{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+p{
+  line-height: 1.75;
+  font-size: 14px;
+}
+
+section{
+  padding: 40px 0;
+}
+
+header{
+  background: #00a84f;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero{
+  background-image: url("images/austin.jpg");
+  padding: 40px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.teammate{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.teammate img, .text{
+  display: inline-block;
+}
+
+.teammate img{
+  width: 20%;
+  margin-right: 20px;
+}
+
+.text{
+  width: 75%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tidbits{
+  background-color: #e8e8e7;
+}
+
+.column{
+  display: inline-block;
+  width: 20%;
+  margin: 20px;
+  text-align: left;
+}
+
+.column img{
+  width: 100%;
+}
+
+form{
+  width: 50%;
+  margin:0 auto;
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  border: 2px solid #00a84f;
+  margin: 10px;
+  padding: 10px;
+}
