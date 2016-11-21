@@ -9,6 +9,7 @@
 
 ### Week 2
 
+* [Choose Your Own Adventure!](https://github.com/generalassembly-atx/js_adventure)
 
 ### Week 3
 
