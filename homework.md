@@ -10,6 +10,7 @@
 ### Week 2
 
 * [Choose Your Own Adventure!](https://github.com/generalassembly-atx/js_adventure)
+* [Deck of Cards](https://github.com/generalassembly-atx/deck_of_cards)
 
 ### Week 3
 
