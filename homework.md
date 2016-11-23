@@ -12,6 +12,12 @@
 * [Choose Your Own Adventure!](https://github.com/generalassembly-atx/js_adventure)
 * [Deck of Cards](https://github.com/generalassembly-atx/deck_of_cards)
 
+#### Thanksgiving Weekend
+
+* [Mad Libs!](https://github.com/ga-wdi-exercises/mad_libs)
+* [Stop Watch](https://github.com/ga-wdi-exercises/timer_js)
+* [Pixart](https://github.com/ga-wdi-exercises/pixart_js)
+
 ### Week 3
 
 
