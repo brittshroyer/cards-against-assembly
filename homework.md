@@ -16,7 +16,7 @@
 
 * [Mad Libs!](https://github.com/ga-wdi-exercises/mad_libs)
 * [Stop Watch](https://github.com/ga-wdi-exercises/timer_js)
-* [Pixart*](https://github.com/ga-wdi-exercises/pixart_js) (Optional)
+* [Pixart](https://github.com/ga-wdi-exercises/pixart_js) (Optional)
 
 ### Week 3
 
