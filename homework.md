@@ -21,4 +21,5 @@
 ### Week 3
 
 * [Finish Tic Tac Toe](https://github.com/generalassembly-atx/tic-tac-toe)
+* [Spotify Me](https://github.com/generalassembly-atx/spotify-me)
 
