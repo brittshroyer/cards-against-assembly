@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Giphy Playground</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" media="screen">
   </head>
   <body>
@@ -11,20 +12,34 @@
       <h1>Giphy Playground</h1>
 
       <section>
-        <h3>Random Giphy</h3>
-        <p>This is a random Giphy loaded when the page first loads</p>
+        <h3>Random GIF</h3>
+        <p>This is a random GIF from Giphy when the page first loads.</p>
 
         <div class="container">
           <div id="random"></div>
-          <button id="refresh" class="btn btn-primary">Refresh Random GIF</button>
         </div>
+
+        <button id="refresh" class="btn btn-primary">Refresh Random GIF</button>
       </section>
 
       <section>
         <h3>Trending GIFs</h3>
-        <p>Top 25 gifs right now</p>
+        <p>The top 25 GIFs on Giphy right here, right now.</p>
 
-        <ul id="trending"></ul>
+        <ul id="trending-results"></ul>
+      </section>
+
+      <section>
+        <h3>Search GIFs</h3>
+
+        <div class="row container">
+          <form id="form-search" class="form-search">
+            <input type="text" id="search" class="form-control" placeholder="Enter your search" />
+            <button id="btn-search" type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+
+        <ul id="search-results"></ul>
       </section>
     </main>
 
