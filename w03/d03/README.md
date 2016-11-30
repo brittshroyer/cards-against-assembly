@@ -1,6 +1,6 @@
 ## Giphy API Playground
 
-Let's explore API's with everyone's favorite animated gif service!
+Let's explore API's with everyone's favorite animated GIF service!
 
 https://github.com/Giphy/GiphyAPI
 
