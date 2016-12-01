@@ -26,3 +26,13 @@
 * [Single Page Applications](https://github.com/ga-students/wdi-atx-9-class/tree/master/w03/d02/afternoon)
 * [Object Oriented Programming (OOP)](https://github.com/ga-students/wdi-atx-9-class/tree/master/w03/d03/morning)
 * [ES6](https://github.com/ga-students/wdi-atx-9-class/tree/master/w03/d03/afternoon)
+
+#### Week 4
+* [Testing](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/morning)
+* [How the Web Works](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/afternoon)
+* [Node.js](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d02/morning)
+* [Express](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d02/afternoon)
+* [NoSQL/MongoDB](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d03/morning)
+* [Mongoose](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d03/afternoon)
+* [REST API Design](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d04/morning)
+
