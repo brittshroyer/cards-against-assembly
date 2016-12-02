@@ -1,6 +1,6 @@
 # Ajaxify Reddit
 
-There's currently a little known gem out there called [Reddit](https://www.reddit.com). The developers are swamped and need your help. They want to test out the Reddit website as a single page application. They have some starter code but haven't had a chance to go much further than that. 
+There's currently a little known gem out there called [Reddit](https://www.reddit.com). The developers are currently swamped with new feature requests and need your help. They want to test out the Reddit website as a single page application. They have some starter code but haven't had a chance to go much further than that. 
 
 ## API
 
@@ -12,7 +12,7 @@ For example:
 // Homepage URL
 https://www.reddit.com/
 
-// API for the homepage
+// JSON data for the homepage
 https://www.reddit.com/.json
 ```
 
@@ -20,13 +20,13 @@ https://www.reddit.com/.json
 // New URL
 https://www.reddit.com/new/
 
-// API for the 'new' section
+// JSON data for the 'new' section
 https://www.reddit.com/new/.json 
 ```
 
 ## Deliverables 
 
-- Replicate the list of stories for each section
+- Replicate the list of stories for each section, with the story image, link, and any relevant information
 - Allow the user to click the story link or image to go to the actual URL of the story
 - For now, **don't** worry about giving users the ability to upvote or downvote the story
 
