@@ -16,3 +16,6 @@ slackHandle: String
 currentlyEnrolled: Boolean
 ```
 
+- Create a form to add students to your collection
+- Don't worry about updating or deleting students 
+
