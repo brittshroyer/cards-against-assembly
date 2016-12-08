@@ -154,7 +154,7 @@ Now add the Mongoose schema for our user model:
 // /models/user.js
 var mongoose = require('mongoose');
 
-var userSchema = new mongoose.Schema({
+var schema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   favorite: String,
@@ -162,10 +162,10 @@ var userSchema = new mongoose.Schema({
   updated_at: Date
 });
 
-var User = mongoose.model('User', userSchema);
+var model = mongoose.model('User', schema);
 
 // Make this available to our other files
-module.exports = User;
+module.exports = model;
 ```
 
 Here's a look at the datatypes we can use in Mongoose documents:
