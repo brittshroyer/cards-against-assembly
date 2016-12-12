@@ -1,0 +1,24 @@
+<% include header %>
+  <body>
+    <h1>Welcome!</h1>
+
+    <div class="main-content">
+      <ul class="posts">
+      </ul>
+    </div>
+
+  <form method="post" action="/blogapi">
+    <input name="title" type="text" placeholder="title"/>
+    <textarea name="content" placeholder="Enter content"></textarea>
+    <input name="author" type="text" value="dirkdunn" placeholder="author">
+    <input type="submit" value="Submit Post" />
+  </form>
+
+  <br/>
+  <a href="/logout">
+    <button type="button">Logout</button>
+  </a>
+
+  <script src="javascripts/dashboard.js"></script>
+  </body>
+</html>

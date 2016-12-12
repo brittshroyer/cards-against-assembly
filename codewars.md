@@ -2,6 +2,14 @@
 
 Here are challenges we've done in class and possible solutions. 
 
+### Jenny's Secret Message
+
+https://www.codewars.com/kata/jennys-secret-message/train/javascript
+
+### ES6 String Addition 
+
+https://www.codewars.com/kata/es6-string-addition/train/javascript
+
 ### Convert number to reversed array of digits
 
 https://www.codewars.com/kata/convert-number-to-reversed-array-of-digits/train/javascript
