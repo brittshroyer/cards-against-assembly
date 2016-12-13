@@ -32,3 +32,4 @@
 
 ### Week 5
 * [JWT Tokens](https://jwt.io/)
+* [Twitter Mascot](https://github.com/generalassembly-atx/twitter_mascot/blob/master/README.md)
