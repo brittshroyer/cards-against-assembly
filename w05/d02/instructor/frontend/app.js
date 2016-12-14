@@ -26,8 +26,32 @@ $(document).ready(function() {
       localStorage.setItem('id_token', authResult.idToken);
       // Display user information
       show_profile_info(profile);
+      showPlaylists();
     });
   });
+
+  var showPlaylists = function() {
+    var idToken = localStorage.getItem('id_token');
+
+    var request = $.ajax({
+      url: 'http://localhost:3000/api/playlists',
+      method: 'GET',
+      data: {
+        title: 'Song title'
+      },
+      headers: {
+        'Authorization': 'Bearer ' + idToken
+      }
+    });
+
+    request.done(function(results) {
+      console.log(results);
+
+      for (var i=0, x=results.length; i<x; i++) {
+        $('main').append('<h3>' + results[i].title + '</h3>');
+      }
+    });
+  };
 
   //retrieve the profile:
   var retrieve_profile = function() {

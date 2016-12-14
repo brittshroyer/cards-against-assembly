@@ -20,7 +20,20 @@ router.get('/playlists/:playlistId', function(req, res) {
   Playlist.findById(req.params.playlistId, '', function(err, playlist) {
     if (err) console.log(err);
 
-    res.json(playlist);
+    PlaylistSong.find({ playlist: req.params.playlistId }, 'song')
+      .populate('song')
+      .exec(function(err, results) {
+        if (err) console.log(err);
+
+        var mappedResults = results.map(function(val) {
+          return val.song;
+        });
+
+        res.json({
+          playlist: playlist,
+          songs: mappedResults
+        });
+      });
   });
 });
 
@@ -69,7 +82,9 @@ router.post('/playlists/:playlistId/songs', function(req, res) {
   }
 
   var query = {
-    spotifySongId: songId
+    spotifySongId: songId,
+    artist: artist,
+    title: title
   },
     update = { expire: new Date() },
     options = { upsert: true, new: true, setDefaultsOnInsert: true };
@@ -95,6 +110,9 @@ router.post('/playlists/:playlistId/songs', function(req, res) {
 
 /* DELETE remove a song from a playlist */
 router.delete('/playlists/:playlistId/songs/:songId', function(req, res) {
+
+
+
   res.json({
     playlistId: req.params.playlistId,
     songId: req.params.songId
