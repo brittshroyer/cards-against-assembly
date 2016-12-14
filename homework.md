@@ -29,3 +29,7 @@
 * [Calculator Testing](https://github.com/generalassembly-atx/calculator_testing)
 * [Emergency Compliment](https://github.com/generalassembly-atx/emergency_compliment)
 * [Mongoose Compliment](https://github.com/generalassembly-atx/mongoose_compliment)
+
+### Week 5
+* [JWT Tokens](https://jwt.io/)
+* [Twitter Mascot](https://github.com/generalassembly-atx/twitter_mascot/blob/master/README.md)
