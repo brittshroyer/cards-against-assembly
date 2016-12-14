@@ -33,3 +33,4 @@
 ### Week 5
 * [JWT Tokens](https://jwt.io/)
 * [Twitter Mascot](https://github.com/generalassembly-atx/twitter_mascot/blob/master/README.md)
+* [2nd blog post](https://github.com/ga-students/wdi-atx-9-class/blob/master/blogging.md)
