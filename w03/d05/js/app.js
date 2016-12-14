@@ -21,11 +21,21 @@ $(function(){
           var link = titleObject[i].data.url;
           var score = titleObject[i].data.score;
           var fullList = ['<li>','<h6>' + score + '</h6>', '<h3>', '<a href="'+link +'">'  + titleUrl + '</a>','</h3>','<img src='+imgUrl+'>','</li>'].join('');
-          $('#ul').append(fullList);
-          console.log(titleObject);
+          // $('#ul').append(fullList);
+
+          var contentArray = [];
+          contentArray.push(fullList);
+          setInterval(function(){
+            $('#main').append(contentArray[i]);
+          }, 3000);
+
         }
 
-        
+
+
+
+
+
 
     })
   }

@@ -1,6 +1,6 @@
 
 // http://api.giphy.com/v1/gifs/random
-console.log('script.js loaded');
+
 
 $(function() {
 
@@ -35,12 +35,7 @@ $(function() {
     $('#random').append(elements);
 
 
-  });
-
-
-
-
-
+    });
   });
 
   $('#trending-results').ready(function(e){
@@ -49,32 +44,32 @@ $(function() {
       // console.log(request);
       var objectList = request.responseJSON.data;
 
-      console.log(objectList);
-
-
-
-
+      var images =[];
 
       for(var i = 0; i<objectList.length; i++){
-        var pic = objectList[i];
-        var img_object = pic.images.downsized;
-        var img_url = pic.images.downsized.url;
-        var img_placeholder = '<img src=' + img_url + '>';
+          var pic = objectList[i];
+          var img_object = pic.images.downsized;
+          var img_url = pic.images.downsized.url;
+          var img_placeholder = '<img src=' + img_url + '>';
+          images.push(img_placeholder);
 
-
-
-
-        $('#trending-results').append(img_placeholder);
-
+          for(var w=0; w < images.length; w++){
+            $('#trending-results').append(images[w]);
+            $('#trending-results').empty();
+          }
         }
 
-        
 
 
 
 
 
-    });
+
+
+
+
+
+
 
 
 
@@ -82,17 +77,22 @@ $(function() {
 
   });
 
+  });
 });
 
 
-  // function updatePic(){
-  //   setInterval(function(){
-  //     for(var i = 0; i<objectList.length; i++){
-  //       var pic = objectList[i];
-  //       var img_object = pic.images.downsized;
-  //       var img_url = pic.images.downsized.url;
-  //       var img_placeholder = '<img src=' + img_url + '>';
-  //       $('#trending-results').append(img_placeholder);
-  //     }
-  //   }, 2000);
-  // }
+
+
+
+
+
+      // console.log(array.length);
+
+
+
+        //put all of these images in an array and then use setinterval to iterate thru it
+
+
+
+
+        // $('#trending-results').append(img_placeholder);
