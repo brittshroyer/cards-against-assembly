@@ -184,7 +184,7 @@ Inside, we set up our tweet socket and finally we _emit_ our _tweet_ on the _twe
 // bin/www
 io.on('connect', function(socket) {
   stream.on('tweet', function(tweet) {
-    socket.emit('tweets', tweet);
+    socket.emit('broadcast_tweet', tweet);
   });
 });
 ```
@@ -218,7 +218,7 @@ Then in `index.ejs` add in our receiving code below `body`:
     console.log('Connected!');
   });
 
-  socket.on('tweets', function(tweet) {
+  socket.on('broadcast_tweet', function(tweet) {
     console.log(tweet);
   });
 </script>
@@ -239,11 +239,11 @@ var data = {};
   data.screen_name = tweet.user.screen_name;
   data.text = tweet.text;
   data.user_profile_image = tweet.user.profile_image_url;
-  socket.emit('tweets', data);
+  socket.emit('broadcast_tweet', data);
 });
 ```
 
-Note the change to: `socket.emit('tweets', data);`
+Note the change to: `socket.emit('broadcast_tweet', data);`
 
 ### Let's change the views
 
@@ -269,7 +269,7 @@ Render the tweets with jQuery and amend the script tag in `index.ejs`:
     console.log('Connected!');
   });
 
-  socket.on('tweets', function(tweet) {
+  socket.on('broadcast_tweet', function(tweet) {
     var html = '<div class="row"><div class="col-md-6 col-md-offset-3 tweet"><img src="' + tweet.user_profile_image + '" class="avatar pull-left"/><div class="names"><span class="full-name">' + tweet.name + ' </span><span class="username">@' +tweet.screen_name + '</span></div><div class="contents"><span class="text">' + tweet.text + '</span></div></div></div>';
     $('#tweet-container').prepend(html);
   });
@@ -331,7 +331,7 @@ io.on('connect', function(socket) {
     data.screen_name = tweet.user.screen_name;
     data.text = tweet.text;
     data.user_profile_image = tweet.user.profile_image_url;
-    socket.emit('tweet_received', data);
+    socket.emit('broadcast_tweet', data);
   });
 });
 
@@ -417,7 +417,7 @@ function onListening() {
       socket.on('connect', function() {
         console.log('Connected!');
       });
-      socket.on('tweet_received', function(tweet) {
+      socket.on('broadcast_tweet', function(tweet) {
         console.log(tweet);
         var $li = $('<li />');
         $li.text(tweet.text);
