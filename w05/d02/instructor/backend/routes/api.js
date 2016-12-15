@@ -20,7 +20,15 @@ router.get('/playlists/:playlistId', function(req, res) {
   Playlist.findById(req.params.playlistId, '', function(err, playlist) {
     if (err) console.log(err);
 
-    res.json(playlist);
+    PlaylistSong.find({ playlist: req.params.playlistId}, 'song')
+      .populate('song')
+      .exec(function(err, results)  {
+        if (err) console.log(err);
+
+        res.json(playlist)
+      });
+
+    });
   });
 });
 
@@ -69,7 +77,9 @@ router.post('/playlists/:playlistId/songs', function(req, res) {
   }
 
   var query = {
-    spotifySongId: songId
+    spotifySongId: songId,
+    artist: artist,
+    title: title
   },
     update = { expire: new Date() },
     options = { upsert: true, new: true, setDefaultsOnInsert: true };

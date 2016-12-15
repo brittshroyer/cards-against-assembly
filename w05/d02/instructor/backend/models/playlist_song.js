@@ -6,11 +6,13 @@ var schema = new mongoose.Schema({
   playlist: {
     type: ObjectId,
     required: true,
+    ref: 'Playlist',
     index: true
   },
   song: {
     type: ObjectId,
     required: true,
+    ref: 'Song',
     index: true
   },
   created: Date
