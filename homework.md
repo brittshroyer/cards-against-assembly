@@ -39,7 +39,7 @@
 
 **Project Week**
 
-### Christmas/New Year's break
+### Winter break
 
 Work on the following:
 
