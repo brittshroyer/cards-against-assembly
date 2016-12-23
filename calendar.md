@@ -49,8 +49,13 @@
 
 **Project Week**
 
-### Unit 3 - Front-end Frameworks
+### Unit 3 - Frontend Frameworks
 
 #### Week 7
 
-
+* [AngularJS](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d02/)
+* [Webpack](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d03/morning)
+* [Intro to React](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d03/afternoon)
+* [Nested Components](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d04/morning)
+* [React + API's](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d04/afternoon)
+* [Firebase](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d05/morning)
