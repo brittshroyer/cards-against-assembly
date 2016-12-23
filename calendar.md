@@ -40,14 +40,10 @@
 
 #### Week 5 
 
-* [Auth, Sessions, Cookies, Local Storage](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/morning)
-* [Lab - Auth, Sessions, Cookies, Local Storage](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/afternoon)
-* [API Auth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d02/morning)
-* [Lab - API Auth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d02/afternoon)
-* [OAuth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d03/morning)
-* [Lab - OAuth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d03/afternoon)
-* [Websockets](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d04/morning)
-* [Lab - Websockets](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d04/morning)
+* [Auth, Sessions, Cookies, Local Storage](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d01/morning)
+* [API Auth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d02/morning)
+* [OAuth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d03/morning)
+* [Websockets](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d04/morning)
 
 #### Week 6 
 
