@@ -34,3 +34,18 @@
 * [JWT Tokens](https://jwt.io/)
 * [Twitter Mascot](https://github.com/generalassembly-atx/twitter_mascot/blob/master/README.md)
 * [2nd blog post](https://github.com/ga-students/wdi-atx-9-class/blob/master/blogging.md)
+
+### Week 6 
+
+**Project Week**
+
+### Christmas/New Year's break
+
+Work on the following:
+
+* Portfolios
+* Unit 3 covers front-end frameworks. We'll be focusing on React
+  - [Learn ReactJS Part I](https://www.codecademy.com/learn/react-101)
+  - [Learn ReactJS Part II](https://www.codecademy.com/learn/react-102)
+
+  
