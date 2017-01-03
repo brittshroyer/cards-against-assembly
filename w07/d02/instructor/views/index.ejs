@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="CardsAgainstAssembly">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,26 +7,29 @@
   <title>Cards Against Assembly™</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/stylesheets/style.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-  <script src="/javascripts/app.js"></script>
-  <script src="/javascripts/services/card.js"></script>
-  <script src="/javascripts/components/appFooter.js"></script>
-  <script src="/javascripts/components/appHeader.js"></script>
-  <script src="/javascripts/components/cards.js"></script>
-  <script src="/javascripts/components/card.js"></script>
-  <script src="/javascripts/components/navigation.js"></script>
-  <script src="/javascripts/components/newCard.js"></script>
-
 </head>
 <body>
   <div class="container">
-    <app-header title="Cards Against Assembly"></app-header>
-    <navigation></navigation>
+    <header class="navbar">
+      <h1 class="pull-left">Cards Against Assembly</h1>
+    </header>
 
-    <div ng-view></div>
+    <section id="cards" class="container-fluid">
+      <div class="row">
 
-    <app-footer made-with="♥︎"></app-footer>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card">
+            <h4 class="card-title">QUESTION</h4>
+            <h6>Cards Against Assembly</h6>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with <span class="heart">♥︎</span> at General Assembly</p>
+    </footer>
   </div>
 </body>
 </html>
