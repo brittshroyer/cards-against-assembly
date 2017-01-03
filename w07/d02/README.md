@@ -34,6 +34,11 @@ AngularJS provides the following benefits when used to develop web apps:
 
 #### AngularJS is part of the MEAN stack
 
+- (M)ongoDB
+- (E)xpress
+- (A)ngular
+- (N)odeJS
+
 #### Angular 1.0-1.4
 
 #### Angular 1.5
