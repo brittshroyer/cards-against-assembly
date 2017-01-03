@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  img(src="#{user.picture}")
+  h2 Welcome #{user.nickname}!
+  h4 This page has been viewed #{viewCount} times
+  br
+  a(href='/logout') Logout

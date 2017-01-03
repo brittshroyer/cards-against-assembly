@@ -8,6 +8,7 @@ $(function() {
     // Stop the form from submitting
     e.preventDefault();
 
+
     $('#results').empty();
 
     var movieTitle = $('#movie-title').val();
