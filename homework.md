@@ -48,4 +48,8 @@ Work on the following:
   - [Learn ReactJS Part I](https://www.codecademy.com/learn/react-101)
   - [Learn ReactJS Part II](https://www.codecademy.com/learn/react-102)
 
-  
+### Week 7 
+
+* Portfolios 
+* [React Lifecycles](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+* [React Calculator](https://github.com/generalassembly-atx/react-calculator)
