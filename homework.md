@@ -51,4 +51,5 @@ Work on the following:
 ### Week 7 
 
 * Portfolios 
+* [React Lifecycles](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 * [React Calculator](https://github.com/generalassembly-atx/react-calculator)
