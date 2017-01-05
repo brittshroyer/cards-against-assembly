@@ -28,7 +28,7 @@ class App extends Component {
         type: 'video'
       }
     })
-    .then(function(response) {
+    .then(response => {
       console.log('YouTube data: ', response);
       const videos = response.data.items;
 
@@ -36,8 +36,8 @@ class App extends Component {
         videos: videos,
         activeVideo: videos[0]
       });
-    }.bind(this))
-    .catch(function(error) {
+    })
+    .catch(error => {
       console.log('Error: ', error);
     });
   }
