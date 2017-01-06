@@ -12,12 +12,13 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      activeVideo: {}
+      activeVideo: {},
+      defaultSearchTerm: 'monkeys'
     };
   }
 
   componentWillMount() {
-    this.search('arrested development');
+    this.search(this.state.defaultSearchTerm);
   }
 
   searchTermChanged(e) {
@@ -60,8 +61,8 @@ class App extends Component {
         <VideoMain
           video={ this.state.activeVideo } />
         <VideoList
-          videoClicked={ this.videoClicked.bind(this) }
-          videos={ this.state.videos } />
+          videos={ this.state.videos }
+          videoClicked={ this.videoClicked.bind(this) } />
       </div>
     );
   }

@@ -12,12 +12,13 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      activeVideo: {}
+      activeVideo: {},
+      defaultSearchTerm: 'monkeys'
     };
   }
 
   componentWillMount() {
-    this.search('arrested development');
+    this.search(this.state.defaultSearchTerm);
   }
 
   searchTermChanged(e) {
@@ -27,9 +28,9 @@ class App extends Component {
   search(term) {
     axios.get('https://www.googleapis.com/youtube/v3/search', {
       params: {
-        part: 'snippet',
-        key: process.env.REACT_APP_YOUTUBE_API_KEY,
         q: term,
+        key: process.env.REACT_APP_YOUTUBE_API_KEY,
+        part: 'snippet',
         type: 'video'
       }
     })

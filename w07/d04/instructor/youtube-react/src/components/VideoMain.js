@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 class VideoMain extends Component {
   render() {
+    const embedUrl = (this.props.video.id) ?
+            `https://www.youtube.com/embed/${ this.props.video.id.videoId }` :
+            'http://placehold.it/725x400';
     let snippet = this.props.video.snippet;
 
     if (!snippet) {
@@ -10,10 +13,6 @@ class VideoMain extends Component {
         description: ''
       }
     }
-
-    const embedUrl = (this.props.video.id) ?
-            `https://www.youtube.com/embed/${ this.props.video.id.videoId }` :
-            'http://placehold.it/725x400'
 
     return (
       <div className="video-main col-md-8">
