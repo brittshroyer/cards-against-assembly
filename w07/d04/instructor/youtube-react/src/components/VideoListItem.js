@@ -7,8 +7,7 @@ class VideoListItem extends Component {
     return (
       <li
         className="list-group-item"
-        onClick={ this.props.onVideoClicked.bind(null, this.props.videoItem) }
-        >
+        onClick={ this.props.videoClicked.bind(null, this.props.videoItem) }>
         <div className="video-list media">
           <div className="media-left">
             <img className="media-object" alt={ snippet.title } src={ snippet.thumbnails.default.url } />

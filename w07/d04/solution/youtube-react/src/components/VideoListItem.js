@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 
 class VideoListItem extends Component {
   render() {
+    const snippet = this.props.videoItem.snippet;
+
     return (
-      <li className="list-group-item">
+      <li
+        className="list-group-item"
+        onClick={ this.props.videoClicked.bind(null, this.props.videoItem) }>
         <div className="video-list media">
-          <div className="media-left"><img className="media-object" src={ this.props.videoItem.snippet.thumbnails.default.url } alt={ this.props.videoItem.snippet.title } /></div>
+          <div className="media-left">
+            <img className="media-object" alt={ snippet.title } src={ snippet.thumbnails.default.url } />
+          </div>
         </div>
         <div className="media-body">
-          <div className="media-heading">{ this.props.videoItem.snippet.title }</div>
+          <div className="media-heading">{ snippet.title }</div>
         </div>
       </li>
-    );
+    )
   }
 }
 

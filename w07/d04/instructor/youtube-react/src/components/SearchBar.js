@@ -5,7 +5,7 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <input
-          onKeyUp={ this.props.onSearchTermChanged }
+          onKeyUp={ this.props.searchTermChanged }
           placeholder="Search for videos" />
       </div>
     );

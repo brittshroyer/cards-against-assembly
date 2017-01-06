@@ -16,10 +16,15 @@ class App extends Component {
     };
   }
 
-  searchTermChanged(e) {
-    const term = e.target.value;
-    console.log('Search for: ', term);
+  componentWillMount() {
+    this.search('arrested development');
+  }
 
+  searchTermChanged(e) {
+    this.search(e.target.value);
+  }
+
+  search(term) {
     axios.get('https://www.googleapis.com/youtube/v3/search', {
       params: {
         part: 'snippet',
@@ -29,7 +34,6 @@ class App extends Component {
       }
     })
     .then(response => {
-      console.log('YouTube data: ', response);
       const videos = response.data.items;
 
       this.setState({
@@ -45,15 +49,19 @@ class App extends Component {
   videoClicked(video) {
     this.setState({
       activeVideo: video
-    })
+    });
   }
 
   render() {
     return (
       <div className="container">
-        <SearchBar onSearchTermChanged={ this.searchTermChanged.bind(this) } />
-        <VideoMain video={ this.state.activeVideo } />
-        <VideoList onVideoClicked={ this.videoClicked.bind(this) } videos={ this.state.videos } />
+        <SearchBar
+          searchTermChanged={ this.searchTermChanged.bind(this) } />
+        <VideoMain
+          video={ this.state.activeVideo } />
+        <VideoList
+          videoClicked={ this.videoClicked.bind(this) }
+          videos={ this.state.videos } />
       </div>
     );
   }

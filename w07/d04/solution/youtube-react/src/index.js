@@ -1,4 +1,5 @@
-require('dotenv').config({ silent: true });
+import dotenv from 'dotenv';
+dotenv.config({ silent: true });
 
 import React from 'react';
 import ReactDOM from 'react-dom';
