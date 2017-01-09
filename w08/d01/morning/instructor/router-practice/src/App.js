@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-// import './App.css';
+import {Router, Link} from 'react-router';
+
+import Home from './Home';
 
 class App extends Component {
   render() {
@@ -10,9 +11,11 @@ class App extends Component {
 
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ul className="header">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/other-stuff">Other Stuff</Link></li>
+        </ul>
         <div className="content">
           {this.props.children}
         </div>
