@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router';
+import {Link, IndexLink} from 'react-router';
+// import './App.css';
 
 import Home from './Home';
 
@@ -12,9 +13,9 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <ul className="header">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/other-stuff">Other Stuff</Link></li>
+          <li><IndexLink to="/" activeClassName="active" activeStyle={{background:"blue"}}>Home</IndexLink></li>
+          <li><Link to="/about" activeClassName="active" activeStyle={{background:"blue"}}>About</Link></li>
+          <li><Link to="/other-stuff" activeClassName="active" activeStyle={{background:"blue"}}>Other Stuff</Link></li>
         </ul>
         <div className="content">
           {this.props.children}
