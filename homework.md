@@ -53,3 +53,7 @@ Work on the following:
 * Portfolios 
 * [React Lifecycles](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 * [React Calculator](https://github.com/generalassembly-atx/react-calculator)
+
+### Week 8
+
+* [3rd blog post](https://github.com/ga-students/wdi-atx-9-class/blob/master/blogging.md)
