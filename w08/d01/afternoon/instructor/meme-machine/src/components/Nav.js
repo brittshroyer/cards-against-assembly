@@ -8,6 +8,7 @@ class Nav extends Component {
       <nav>
         <li><NavLink to="/" onlyActiveOnIndex>Memes</NavLink></li>
         <li><NavLink to="/add">Add Meme</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
       </nav>
     );
   }

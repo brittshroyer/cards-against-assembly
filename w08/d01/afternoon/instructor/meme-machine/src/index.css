@@ -16,5 +16,16 @@ nav li a.active, nav li a:hover {
 }
 
 .content {
-  margin: 20px 0;
+  margin: 20px;
+}
+
+.meme img, .meme-img {
+  max-width: 240px;
+}
+
+.memes .meme {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 20px;
+  list-style: none;
 }
