@@ -7,7 +7,7 @@ class VideoList extends Component {
     const videos = this.props.videos;
     const items = videos.map(video => {
       return <VideoListItem
-                videoClicked={ this.props.videoClicked }
+                { ...this.props }
                 videoItem={ video }
                 key={ video.id.videoId } />
     });
