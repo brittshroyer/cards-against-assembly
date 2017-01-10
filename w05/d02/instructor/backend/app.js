@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var api = require('./routes/api');
 
 var app = express();
+var cors = require('cors');
 
 var mongoose = require('mongoose');
 mongoose.connect(process.env.DB_CONN_PLAYLISTS);
@@ -20,6 +21,9 @@ var jwtCheck = jwt({
   secret: process.env.AUTH0_CLIENT_SECRET,
   audience: process.env.AUTH0_CLIENT_ID
 });
+
+// This enables cross origin resource sharing
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

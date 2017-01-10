@@ -27,6 +27,8 @@
 * [Object Oriented Programming (OOP)](https://github.com/ga-students/wdi-atx-9-class/tree/master/w03/d03/morning)
 * [ES6](https://github.com/ga-students/wdi-atx-9-class/tree/master/w03/d03/afternoon)
 
+### Unit 2 - Node.js + Mongo
+
 #### Week 4
 * [Testing](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/morning)
 * [How the Web Works](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d01/afternoon)
@@ -36,3 +38,24 @@
 * [Mongoose](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d03/afternoon)
 * [REST API Design](https://github.com/ga-students/wdi-atx-9-class/tree/master/w04/d04/morning)
 
+#### Week 5 
+
+* [Auth, Sessions, Cookies, Local Storage](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d01/morning)
+* [API Auth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d02/morning)
+* [OAuth](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d03/morning)
+* [Websockets](https://github.com/ga-students/wdi-atx-9-class/tree/master/w05/d04/morning)
+
+#### Week 6 
+
+**Project Week**
+
+### Unit 3 - Frontend Frameworks
+
+#### Week 7
+
+* [AngularJS](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d02/)
+* [Webpack](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d03/morning)
+* [Intro to React](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d03/afternoon)
+* [Nested Components](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d04/morning)
+* [React + API's](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d04/afternoon)
+* [Firebase](https://github.com/ga-students/wdi-atx-9-class/tree/master/w07/d05/morning)

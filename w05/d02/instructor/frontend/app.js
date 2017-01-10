@@ -26,8 +26,41 @@ $(document).ready(function() {
       localStorage.setItem('id_token', authResult.idToken);
       // Display user information
       show_profile_info(profile);
+      showPlaylists();
     });
   });
+
+  var getPlaylist = function(playlistId) {
+    // make ajax to get all songs for this playlist
+  };
+
+  var showPlaylists = function() {
+    var idToken = localStorage.getItem('id_token');
+    if (idToken) {
+      var request = $.ajax({
+        url: 'http://localhost:3000/api/playlists',
+        method: 'GET',
+        data: {
+          title: 'Song title'
+        },
+        headers: {
+          'Authorization': 'Bearer ' + idToken
+        }
+      });
+
+      request.done(function(results) {
+        console.log(results);
+
+        for (var i=0, x=results.length; i<x; i++) {
+          $('#playlists').append('<li><a href="#" id="' + results[i]._id + '">' + results[i].title + '</a></li>');
+          $('#' + results[i]._id).on('click', function(e) {
+            // alert($(this).attr('id'));
+            getPlaylist($(this).attr('id'));
+          });
+        }
+      });
+    }
+  };
 
   //retrieve the profile:
   var retrieve_profile = function() {
@@ -57,4 +90,5 @@ $(document).ready(function() {
   };
 
   retrieve_profile();
+  showPlaylists();
 });

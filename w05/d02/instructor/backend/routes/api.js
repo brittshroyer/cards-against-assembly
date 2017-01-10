@@ -20,6 +20,7 @@ router.get('/playlists/:playlistId', function(req, res) {
   Playlist.findById(req.params.playlistId, '', function(err, playlist) {
     if (err) console.log(err);
 
+<<<<<<< HEAD
     PlaylistSong.find({ playlist: req.params.playlistId}, 'song')
       .populate('song')
       .exec(function(err, results)  {
@@ -29,6 +30,22 @@ router.get('/playlists/:playlistId', function(req, res) {
       });
 
     });
+=======
+    PlaylistSong.find({ playlist: req.params.playlistId }, 'song')
+      .populate('song')
+      .exec(function(err, results) {
+        if (err) console.log(err);
+
+        var mappedResults = results.map(function(val) {
+          return val.song;
+        });
+
+        res.json({
+          playlist: playlist,
+          songs: mappedResults
+        });
+      });
+>>>>>>> 9c44fe4797824adbad82b88872b62acaab3444c5
   });
 });
 
@@ -105,6 +122,9 @@ router.post('/playlists/:playlistId/songs', function(req, res) {
 
 /* DELETE remove a song from a playlist */
 router.delete('/playlists/:playlistId/songs/:songId', function(req, res) {
+
+
+
   res.json({
     playlistId: req.params.playlistId,
     songId: req.params.songId

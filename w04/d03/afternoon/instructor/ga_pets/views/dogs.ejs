@@ -1,0 +1,13 @@
+
+<% include ./partials/header %>
+
+<h2>Dogs</h2>
+
+<ul>
+  <% for (var i=0, x=dogdog.length; i<x; i++) { %>
+    <li><a href="/dogs/<%= dogdog[i]._id %>"><%= dogdog[i].name %></a> is a <%= dogdog[i].breed %> who is
+      <%= dogdog[i].age %> years old</li>
+  <% } %>
+</ul>
+
+<% include ./partials/footer %>
