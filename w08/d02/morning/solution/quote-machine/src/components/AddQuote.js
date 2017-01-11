@@ -8,7 +8,24 @@ class AddQuote extends Component {
     super(props);
 
     this.state = {
-      quote: {}
+      quote: {},
+      showForm: false
+    }
+  }
+
+  componentWillMount() {
+    firebase.auth().onAuthStateChanged(user => {
+      const showForm = (user) ? true : false;
+
+      this.setState({
+        showForm: showForm
+      });
+    });
+
+    if (firebase.auth().currentUser) {
+      this.setState({
+        showForm: true
+      });
     }
   }
 
@@ -34,8 +51,8 @@ class AddQuote extends Component {
   }
 
   render() {
-    return (
-      <div>
+    const html = (this.state.showForm) ?
+      (
         <form onSubmit={ this.handleSubmit.bind(this) }>
           <input
             className="form-control"
@@ -52,6 +69,12 @@ class AddQuote extends Component {
             type="submit"
             value="Save" />
         </form>
+      ) :
+      <h3>Please log in to continue</h3>;
+
+    return (
+      <div>
+        { html }
       </div>
     );
   }

@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+import { firebase } from '../utils/firebase';
+
 class LogoutButton extends Component {
+  handleClick(e){
+    e.preventDefault();
+
+    firebase.auth().signOut();
+  }
   render(){
     return (
-      <button className='btn col-xs-1 col-xs-offset-1'>{this.props.children}</button>
+      <button onClick={this.handleClick.bind(this)}
+      className="btn">{this.props.children}</button>
     )
   }
 }
-
 export default LogoutButton;

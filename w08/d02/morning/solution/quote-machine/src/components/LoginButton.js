@@ -2,18 +2,20 @@ import React, { Component } from 'react';
 
 import { firebase } from '../utils/firebase';
 
-export default class LoginButton extends Component {
+class LoginButton extends Component {
   handleClick(e) {
-    e.preventDefault()
-    let provider = new firebase.auth.GithubAuthProvider();
+    e.preventDefault();
+
+    const provider = new firebase.auth.GithubAuthProvider();
     firebase.auth().signInWithPopup(provider);
   }
 
   render() {
     return (
-      <button onClick={ this.handleClick.bind(this) }>
-        {this.props.children}
-      </button>
+      <button onClick={ this.handleClick.bind(this) }
+        className="btn">{ this.props.children }</button>
     )
   }
 }
+
+export default LoginButton;
