@@ -10,6 +10,10 @@ import { firebase } from './utils/firebase';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.state ={
+      user: {}
+    }
   }
 
   render() {
