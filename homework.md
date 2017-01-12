@@ -57,3 +57,4 @@ Work on the following:
 ### Week 8
 
 * [3rd blog post](https://github.com/ga-students/wdi-atx-9-class/blob/master/blogging.md)
+* [Getting started with React Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
